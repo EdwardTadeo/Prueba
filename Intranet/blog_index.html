@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    
+        <meta charset="UTF-8">
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body>
+
+
+
+
+
+<div class="w3-main" >
+
+<div id="myTop" class="w3-container w3-top w3-theme w3-large">
+  <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">ASUS</span></p>
+</div>
+
+<header class="w3-container w3-theme" style="padding:64px 32px">
+  <h1 class="w3-xxxlarge">Bienvenido</h1>
+</header>
+
+<div class="w3-container" style="padding:150px">
+
+<h2>Presentación</h2>
+
+<p>Inspiring Innovation • Persistent Perfection</p>
+
+<ul class="w3-leftbar w3-theme-border" style="list-style:none">
+ <li>comprometida con la innovación y la calidad,</li>
+ <li>anualmente recibimos numerosos galardones </li>
+ <li>por parte de numerosos medios,</li>
+ <li> miembros de la industria e incluso gobiernos.</li>
+</ul>
+<br>
+<img src="asus_laptop.jpg" style="width:20%" alt="Responsive">
+
+<hr>
+<h2>ASUS</h2>
+<p>ASUS surge de las últimas 4 letras de Pegasus, el caballo alado de la mitología griega, símbolo de inspiración artística y aprendizaje. ASUS personifica la fortaleza, el espíritu creativo y la pureza representada por esta majestuosa criatura, alcanzando con cada nuevo lanzamiento, nuevas cuotas de calidad e innovación.</p>
+
+<hr>
+<h2>Valores</h2>
+<div class="w3-container w3-sand w3-leftbar">
+<p><i>La marca ASUS está fundamentada en cuatro valores fundamentales conocidos como el ADN ASUS los cuales incluyen: “Las 5 virtudes de ASUS: Humildad, integridad, diligencia, agilidad y valor”, “Enfoque al fundamento y los resultados”, “Innovación y estética” y “Optimización de la productividad (Lean Thinking)”. Con el fin de alcanzar la visión de llegar a ser la empresa más admirada de la nueva era digital, nuestros empleados son alentados a practicar y desarrollar sendos “genes”.</i><br>
+-Abraham Lincon</p>
+</div>
+
+<hr>
+<h2>Productos</h2>
+
+<p>MyASUS: Todo lo que necesitas para mejorar la experiencia con tu notebook.</p>
+<p> Descargalo aca!</p>
+
+
+<div class="w3-panel w3-light-grey w3-padding-16 w3-card">
+<h3 class="w3-center">Serie N</h3>
+<div class="w3-content" style="max-width:800px">
+<a href="tryw3css_templates_band.htm" target="_blank"  title="Band Demo"><img src="laptop1.jpg" style="width:98%;margin:20px 0" alt="Band Template"></a><br>
+<div class="w3-row">
+  <div class="w3-col m6">
+    <a href="tryw3css_templates_band.htm" target="_blank" class="w3-button w3-padding-large w3-dark-grey" style="width:98.5%">Demo</a>
+  </div>
+  <div class="w3-col m6">
+    <a href="w3css_templates.asp" class="w3-button w3-padding-large w3-dark-grey" style="width:98.5%">More Templates »</a>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-padding-16 w3-card" style="background-color:#eee">
+<h3 class="w3-center">Serie X</h3>
+<div class="w3-content" style="max-width:800px">
+<img src="laptop2.jpg" style="width:98%;margin:20px 0" alt="Blog Template"><br>
+<div class="w3-row">
+  <div class="w3-col m6">
+    <a href="tryw3css_templates_blog.htm" target="_blank" class="w3-button w3-padding-large w3-dark-grey" style="width:98.5%">Demo</a>
+  </div>
+  <div class="w3-col m6">
+    <a href="w3css_templates.asp" class="w3-button w3-padding-large w3-dark-grey" style="width:98.5%">More Templates »</a>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer class="w3-container w3-theme" style="padding:32px">
+  <p>Footer information goes here</p>
+</footer>
+     
+</div>
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+// Accordions
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+</script>
+     
+</body>
+</html> 

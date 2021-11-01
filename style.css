@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Creepster&family=Gluten&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface';
+}
+
+a{
+    color: #000;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+body{
+    background: #134E5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     background-image: url('Pagina/fondo.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.section{
+height: 65vh;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 20px;
+
+}
+.container{
+    position: relative;
+}
+.skull{
+    position: absolute;
+    background-image: url('Pagina/mouse.png');
+    background-size: cover;
+    animation:move 10s linear infinite;
+}
+@keyframes move{
+0%,
+100% {
+transform: translateY(-40px);
+}
+50% {
+    transform: translateY(40px);
+}
+}
+
+.skull1{
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: -60px;
+}
+.skull1::before{
+    content: "";
+    height: 370px;
+    border-left: 5px solid #000;
+    opacity: 0.6;
+    position: absolute;
+    top: -340px;
+    left: 60%;
+}
+
+.skull2{
+    width: 50px;
+    height: 50px;
+    top: 150px;
+    left: -100px;
+    z-index: 2;
+}
+
+.skull2::before{
+    content: "";
+    height: 700px;
+    border-left: 5px solid #000;
+    opacity: 0.6;
+    position: absolute;
+    top: -685px;
+    left: 60%;
+}
+
+.skull3{
+    width: 100px;
+    height: 100px;
+    right: -50px;
+    bottom: -60px;
+    z-index: 2;
+}
+
+.skull3::before{
+    content: "";
+    height: 800px;
+    border-left: 5px solid #000;
+    opacity: 0.6;
+    position: absolute;
+    top: -770px;
+    left: 60%;
+}
+
+.skull4{
+    width: 80px;
+    height: 80px;
+    left: 100px;
+    bottom: -80px;
+}
+
+.skull4::before{
+    content: "";
+    height: 800px;
+    border-left: 5px solid #000;
+    opacity: 0.6;
+    position: absolute;
+    top: -775px;
+    left: 60%;
+}
+
+.skull5{
+    width: 110px;
+    height: 110px;
+    top: -20px;
+    right: 0px;
+}
+
+.skull5::before{
+    content: "";
+    height: 600px;
+    border-left: 5px solid #000;
+    opacity: 0.6;
+    position: absolute;
+    top: -565px;
+    left: 60%;
+}
+
+.container__inner{
+width:100%;
+display:flex;
+align-items: center;
+justify-content: center;
+position: relative;
+border-radius: 10px;
+backdrop-filter: blur(5px);
+background:rgba(255, 255, 255, 0.1);
+box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+border-right:1px solid rgba(255, 255, 255, 0.5);
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form{
+    width:100%;
+    height: 100%;
+    padding: 40px 70px;
+    position: relative;
+}
+.form__title{
+    color:#000;
+    font-size:32px;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.input__box{
+    width:100%;
+    margin-top:20px;
+}
+
+.input__box input{
+width: 100%;
+color: #000;
+border:none;
+outline: none;
+font-size: 16px;
+padding: 10px 20px;
+letter-spacing: 1px;
+border-radius: 35px;
+background:rgba(255, 255, 255, 0.4);
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+border-right:1px solid rgba(255, 255, 255, 0.5);
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.input__box input[type="submit"]{
+color: #000;
+cursor: pointer;
+background:#fff;
+max-width: 100px;
+font-weight: 600;
+margin-bottom: 20px;
+font-family: 'Architects Daughter',cursive;
+}
+
+.input__box input::placeholder{
+    color: rgba(0, 0, 0, 0.616);
+}
+
+.form_subtitle{
+    color: #000;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
