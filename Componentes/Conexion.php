@@ -60,7 +60,7 @@ while ($Logeo = mysqli_fetch_array($query)) {
                     </td>
                 </tr>
                 <tr>
-                    <td>Contraseña</td>
+                    <td>Contraseñas</td>
                     <td>
                         <input type="text" name="txtContraseña" value=" " size="30" />  
                     </td>
